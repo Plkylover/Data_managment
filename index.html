@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="data">
+    <h2>students Information extract</h2>
+    <form>
+      <div class="sub">
+         <label>Class</label>
+         <input id="classs" type="text" placeholder="Enter Your Class">
+       </div>
+      <div class="sub">
+        <label>Section</label>
+        <input id="sec" type="text" style="text-transform: uppercase;" placeholder="Enter your section in Block letter">
+      </div>
+      <div class="sub">
+        <label>Roll no.</label>
+        <input id="roll" type="text" placeholder="Enter Your Roll No.">
+      </div>
+      <center><button onclick="extract()">Submit</button></center>
+    </form>
+    <div id="value" hidden>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+    </div>
+  </div>
+  <h5 id="panel" onclick="show()" style="color: cornflowerblue;">Admin Panel</h5>
+  <div class="data" style="display: none">
+    <h2 style="text-align: center; margin: 1.5vw;">student Information entry</h2>
+     <form>
+       <div class="sub">
+         <label>Name</label>
+         <input style="text-transform: capitalize;" id="e_name" type="text" placeholder="Enter your Name">
+       </div>
+       <div class="sub">
+         <label>Class</label>
+         <input id="e_classs" type="text" placeholder="Enter Your Class">
+       </div>
+       <div class="sub">
+         <label>Section</label>
+         <input id="e_sec" style="text-transform: uppercase;" type="text" placeholder="Enter Your Section">
+       </div>
+       <div class="sub">
+         <label>Roll no.</label>
+         <input id="e_roll" type="text" placeholder="Enter Your Roll No.">
+       </div>
+       <div class="sub">
+         <label>Pt 2 Percentage</label>
+         <input id="e_pt2" style="text-transform: uppercase;" type="text" placeholder="Enter Your PT 2 percentage">
+       </div>
+       <center><button onclick="feed()">Submit</button></center>
+     </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
