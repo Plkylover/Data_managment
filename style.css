@@ -50,3 +50,15 @@ form{
   align-items: center;
   flex-direction: column;
 }
+@media only screen and (min-width:800px){
+  .data{
+    height: 100vw;
+    width: 80vw;
+  }
+  form{
+    height: 80vw;
+  }
+  input{
+    width: 55vw;
+  }
+}
